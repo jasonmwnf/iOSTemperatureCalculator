@@ -24,4 +24,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)sliderAction:(id)sender {
+    
+    self.fahernheitLabel.text = [[NSString alloc] initWithFormat:@"%4.0f fahrenheit", self.Slider.value];
+    
+    double fahrenheit = self.Slider.value;
+    double celsius = (fahrenheit - 32) / 1.8;
+    
+    NSString *result = [[NSString alloc] initWithFormat:@"%4.1f celsius", celsius];
+    self.celciusLabel.text = result;
+    
+}
 @end

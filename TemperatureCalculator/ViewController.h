@@ -10,6 +10,10 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *fahernheitLabel;
+@property (weak, nonatomic) IBOutlet UILabel *celciusLabel;
+@property (weak, nonatomic) IBOutlet UISlider *Slider;
 
+- (IBAction)sliderAction:(id)sender;
 @end
 
